@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Jomhuria&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <title>Frontend Mentor | QR code component</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --small-padding: 16px
+    }
+
+    body {
+      background-color: hsl(212, 45%, 89%);
+      font-family: "Outfit", sans-serif;
+      ;
+    }
+
+    .qr-code-card {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      width: 320px;
+      background-color: hsl(0, 0%, 100%);
+      text-align: center;
+      padding: var(--small-padding) var(--small-padding) 40px;
+      border-radius: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .qr-code-card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .qr-code-card .text {
+      padding: 0 var(--small-padding);
+    }
+
+    .qr-code-card .text p:first-of-type {
+      color: hsl(218, 44%, 22%);
+      font-weight: 700;
+      font-size: 22px;
+      padding-bottom: 24px;
+    }
+
+    .qr-code-card .text p:last-of-type {
+      color: hsl(216, 15%, 48%);
+      font-weight: 400;
+      font-size: 15px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="qr-code-card">
+    <img src="images/image-qr-code.png" alt="qr-code-image">
+    <div class="text">
+      <p>
+        Improve your front-end skills by building projects
+      </p>
+      <p>
+        Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>
